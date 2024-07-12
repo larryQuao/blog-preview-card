@@ -18,31 +18,38 @@
     }
 
     body{
-      background-color: #F6D050;
+      background-color: #F4D04E;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-
+    
     .container{
       background-color: #FFFFFF;
       width: 340px;
-      /* height: 488px; */
       padding: 24px;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 24px;
       border: solid 1px #000000;border-radius: 20px;
       font-family: 'Figtree', sans-serif;
+      box-shadow: 8px 8px #000000;
+    }
+
+    .container:hover{
+      box-shadow: 16px 16px #000000;
     }
 
     img{
       width: 336px;
       height: 200px;
-      border-radius: 10px; 
-      /* border: solid 1px red; */
+      border-radius: 10px;
     }
 
     .content-area{
       width:336px;
-      /* border: solid 1px blue; */
       display: flex;
       flex-direction: column;
       gap: 12px;
@@ -50,7 +57,7 @@
 
     .button{
       padding: 4px 12px;
-      background: #F6D050;
+      background: #F4D04E;
       width: 60px;
       border-radius: 4px;
       font-size: 14px;
@@ -59,16 +66,18 @@
 
     .small-heading{
       font-size: 14px;
+      font-weight: 600;
     }
     .heading{
       font-size: 24px;
       font-weight: 800;
-      /* border: solid 1px red; */
     }
 
     p{
       font-size: 16px;
+      font-weight: 500;
       color: grey;
+      line-height: 1.5;
     }
 
     .author{
@@ -76,7 +85,7 @@
       align-items: center;
       gap: 12px;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 800;
     }
 
     .author img{
@@ -96,8 +105,9 @@
         </div>
       
         <div class="small-heading">
-          Published 21 Dec 2023
+          Published <time datetime="2023-12-21 0:00">21 Dec 2023</time>
         </div>
+        
     
         <div class="heading">
           HTML & CSS foundations
