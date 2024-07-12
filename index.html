@@ -3,32 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Blog preview card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      background-color: #F6D050;
+    }
+
+    .container{
+      background-color: #FFFFFF;
+      width: 340px;
+      /* height: 488px; */
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      border: solid 1px #000000;border-radius: 20px;
+      font-family: 'Figtree', sans-serif;
+    }
+
+    img{
+      width: 336px;
+      height: 200px;
+      border-radius: 10px; 
+      /* border: solid 1px red; */
+    }
+
+    .content-area{
+      width:336px;
+      /* border: solid 1px blue; */
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .button{
+      padding: 4px 12px;
+      background: #F6D050;
+      width: 60px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .small-heading{
+      font-size: 14px;
+    }
+    .heading{
+      font-size: 24px;
+      font-weight: 800;
+      /* border: solid 1px red; */
+    }
+
+    p{
+      font-size: 16px;
+      color: grey;
+    }
+
+    .author{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .author img{
+      width: 32px;
+      height: 32px;
+    }
+
   </style>
 </head>
 <body>
+  <div class="container">
+    <img src="/assets/images/illustration-article.svg" alt="">
 
-  Learning
+      <div class="content-area">
+        <div class="button">
+          Learning
+        </div>
+      
+        <div class="small-heading">
+          Published 21 Dec 2023
+        </div>
+    
+        <div class="heading">
+          HTML & CSS foundations
+        </div>
 
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </div>
+      <div class="author">
+        <img src="/assets/images/image-avatar.webp" alt="image-avatar">
+        Greg Hooper
+      </div>
   </div>
 </body>
 </html>
