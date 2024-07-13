@@ -7,119 +7,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="/style.css">
   <title>Frontend Mentor | Blog preview card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-    }
-
-    body{
-      background-color: #F4D04E;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .container{
-      background-color: #FFFFFF;
-      width: 340px;
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      border: solid 1px #000000;border-radius: 20px;
-      font-family: 'Figtree', sans-serif;
-      box-shadow: 8px 8px #000000;
-    }
-
-    .container:hover{
-      box-shadow: 16px 16px #000000;
-      cursor: pointer;
-    }
-
-    img{
-      width: 336px;
-      height: 200px;
-      border-radius: 10px;
-    }
-
-    .content-area{
-      width:336px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .button{
-      padding: 4px 12px;
-      background: #F4D04E;
-      width: 60px;
-      border-radius: 4px;
-      font-size: 14px;
-      font-weight: 900;
-    }
-
-    .small-heading{
-      font-size: 14px;
-      font-weight: 600;
-    }
-    .heading{
-      font-size: 24px;
-      font-weight: 800;
-    }
-
-    p{
-      font-size: 16px;
-      font-weight: 500;
-      color: grey;
-      line-height: 1.5;
-    }
-
-    .author{
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 14px;
-      font-weight: 800;
-    }
-
-    .author img{
-      width: 32px;
-      height: 32px;
-    }
-
-  </style>
 </head>
 <body>
-  <div class="container">
-    <img src="/assets/images/illustration-article.svg" alt="">
-
-      <div class="content-area">
-        <div class="button">
-          Learning
-        </div>
-      
-        <div class="small-heading">
-          Published <time datetime="2023-12-21 0:00">21 Dec 2023</time>
-        </div>
+  <main>
+    <div class="container">
+      <img src="/assets/images/illustration-article.svg" alt="">
+  
+        <div class="content-area">
+          <div class="button">
+            Learning
+          </div>
         
-    
-        <div class="heading">
-          HTML & CSS foundations
+          <div class="small-heading">
+            Published <time datetime="2023-12-21 0:00">21 Dec 2023</time>
+          </div>
+          
+      
+          <div class="heading">
+            <h3>HTML & CSS foundations</h3>
+          </div>
+  
+          <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
         </div>
-
-        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
-      </div>
-      <div class="author">
-        <img src="/assets/images/image-avatar.webp" alt="image-avatar">
-        Greg Hooper
-      </div>
-  </div>
+        <div class="author">
+          <img src="/assets/images/image-avatar.webp" alt="image-avatar">
+          <p>Greg Hooper</p>
+        </div>
+    </div>
+  </main>
 </body>
 </html>
