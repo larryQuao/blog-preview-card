@@ -1,0 +1,87 @@
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      background-color: #F4D04E;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .container{
+      background-color: #FFFFFF;
+      width: 340px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      border: solid 1px #000000;border-radius: 20px;
+      font-family: 'Figtree', sans-serif;
+      box-shadow: 8px 8px #000000;
+    }
+
+    .container:hover{
+      box-shadow: 16px 16px #000000;
+      cursor: pointer;
+    }
+
+    img{
+      width: 336px;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    .content-area{
+      width:336px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .button{
+      padding: 4px 12px;
+      background: #F4D04E;
+      width: 60px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .small-heading{
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .heading{
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    .heading:hover{
+        color: yellow;
+        cursor: pointer;
+    }
+
+    p{
+      font-size: 16px;
+      font-weight: 500;
+      color: grey;
+      line-height: 1.5;
+    }
+
+    .author, .author p{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      font-weight: 800;
+      color: #000000;
+    }
+
+    .author img{
+      width: 32px;
+      height: 32px;
+    }
